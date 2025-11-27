@@ -26,7 +26,7 @@ const server = http.createServer(app);
 // Create Socket.IO server
 const io = new Server(server, {
   cors: {
-    origin: "*",  // ถ้าใช้ frontend จริงให้ใส่ domain
+    origin: "http://localhost:5173",  // ถ้าใช้ frontend จริงให้ใส่ domain
     methods: ["GET", "POST"]
   }
 });
